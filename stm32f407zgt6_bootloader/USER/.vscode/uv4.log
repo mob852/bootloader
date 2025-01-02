@@ -1,0 +1,9 @@
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\keil\ARM\arm compiler 5\Bin'
+Build target 'Template'
+compiling common.c...
+linking...
+Program Size: Code=12298 RO-data=466 RW-data=80 ZI-data=3112  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin -o ".\bin_file\Template.bin" "..\OBJ\Template.axf"
+"..\OBJ\Template.axf" - 0 Error(s), 0 Warning(s).
+Build Time Elapsed:  00:00:06

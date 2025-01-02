@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "usart.h": "c",
+        "stmflash.h": "c",
+        "iap.h": "c",
+        "common.h": "c"
+    }
+}
