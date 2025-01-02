@@ -5,6 +5,6 @@
 !.gitignore
 
 # Allow selected folders
-!stm32f407zgt6_bootloader
-!stm32f407zgt6_flashwr
-!template_test
+!stm32f407zgt6_bootloader/
+!stm32f407zgt6_flashwr/
+!template_test/
