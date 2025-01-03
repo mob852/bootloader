@@ -7,11 +7,10 @@
 - [安装与运行](#安装与运行)
 - [使用说明](#使用说明)
 - [文件结构](#文件结构)
-- [贡献指南](#贡献指南)
-- [许可证](#许可证)
-
+- [引用](#引用)
+  
 ## 背景
-用于bootloader远程升级，刷新固件。使用串口，蓝牙，基于stm32f407zgt6。
+用于bootloader远程升级，刷新固件。使用串口，蓝牙，基于stm32f407zgt6，使用xshell的ymodem传输文件。
 
 ## 功能
 stm32f407zgt6_bootloader 后台刷新固件
@@ -36,6 +35,8 @@ bootloader               程序使用起始flash地址               0x8000000 -
 settings                （程序各种跳转指令存放）的flash地址   0x8004000 -0x8008000
 ApplicationAddress       应用程序的起始地址                  0x8010000 -0x8020000
 
+编译application需要选择irom range
+
 跳转app
 直接跳转到ApplicationAddress
 
@@ -54,3 +55,12 @@ application
 ├── template_test/                         # 应用程序样例
 ├── stm32f407zgt6_flashwr/                 # flash读写样例
 └── README.md           # 项目说明
+
+## 引用
+该项目基于(https://github.com/havenxie/stm32-iap-uart-boot)进行
+修改了部分代码适配stm32f407
+关于flash的擦写 从page到sector
+application address的选择
+修改生成bin文件的方式 直接修改keil user setting
+串口接收中断设置 命令解析
+
