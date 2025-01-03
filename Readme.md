@@ -36,10 +36,21 @@ bootloader               程序使用起始flash地址               0x8000000 -
 settings                （程序各种跳转指令存放）的flash地址   0x8004000 -0x8008000
 ApplicationAddress       应用程序的起始地址                  0x8010000 -0x8020000
 
+跳转app
+直接跳转到ApplicationAddress
+
+erase
+擦除secotr 0x8010000 -0x8020000
+
+application 
+使用一个蓝牙HC-06 波特率115200 应用单片机串口2
+设置接收中断 如果接收到menu/update等指令 改写setting 然后reset 进入bootlader 执行相应操作
+
+
 ## 文件结构
-简要描述项目的文件结构。
+
 ```markdown
-├── src/                # 主代码
-├── docs/               # 文档
-├── examples/           # 示例
+├── stm32f407zgt6_bootloader               # bootloader
+├── template_test/                         # 应用程序样例
+├── stm32f407zgt6_flashwr/                 # flash读写样例
 └── README.md           # 项目说明
