@@ -8,8 +8,11 @@
 !stm32f407zgt6_bootloader/
 !stm32f407zgt6_flashwr/
 !template_test/
+!Readme.md
+
 
 # Allow all files and subfolders inside the selected folders
 !stm32f407zgt6_bootloader/**
 !stm32f407zgt6_flashwr/**
 !template_test/**
+
