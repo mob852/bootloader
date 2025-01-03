@@ -38,3 +38,4 @@
 ..\obj\main.o: D:\keil\ARM\arm compiler 5\Bin\..\include\stdio.h
 ..\obj\main.o: ..\SYSTEM\sys\sys.h
 ..\obj\main.o: ..\SYSTEM\delay\delay.h
+..\obj\main.o: HC_SR04.h

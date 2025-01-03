@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\OBJ\Template.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\OBJ\Template.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Tue Dec 31 18:39:55 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Thu Jan 02 17:30:06 2025
 <BR><P>
 <H3>Maximum Stack Usage =       1296 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -262,8 +262,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 1296 + Unknown Stack Size
 <LI>Call Chain = __rt_entry_main &rArr; main &rArr; IAP_Update &rArr; Ymodem_Receive &rArr; EraseSomeSectors &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+<BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[fc]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
@@ -602,17 +602,17 @@ Global Symbols
 <P><STRONG><a name="[103]"></a>FLASH_DataCacheReset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, stm32f4xx_flash.o(.text), UNUSED)
 
 <P><STRONG><a name="[ad]"></a>FLASH_Unlock</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f4xx_flash.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_WriteFlag
-<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STMFLASH_Write
+<BR><BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STMFLASH_Write
 <LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseSomeSectors
 <LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseSomePages
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_WriteFlag
 </UL>
 
 <P><STRONG><a name="[af]"></a>FLASH_Lock</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f4xx_flash.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_WriteFlag
-<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STMFLASH_Write
+<BR><BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STMFLASH_Write
 <LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseSomeSectors
 <LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseSomePages
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_WriteFlag
 </UL>
 
 <P><STRONG><a name="[81]"></a>FLASH_GetStatus</STRONG> (Thumb, 90 bytes, Stack size 0 bytes, stm32f4xx_flash.o(.text))
@@ -736,8 +736,8 @@ Global Symbols
 <P><STRONG><a name="[107]"></a>FLASH_OB_GetUser</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f4xx_flash.o(.text), UNUSED)
 
 <P><STRONG><a name="[b6]"></a>FLASH_OB_GetWRP</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f4xx_flash.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_Main_Menu
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_DisableWriteProtectionPages
+<BR><BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_DisableWriteProtectionPages
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_Main_Menu
 </UL>
 
 <P><STRONG><a name="[108]"></a>FLASH_OB_GetWRP1</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f4xx_flash.o(.text), UNUSED)
@@ -1029,9 +1029,9 @@ Global Symbols
 <P><STRONG><a name="[ae]"></a>Int2Str</STRONG> (Thumb, 84 bytes, Stack size 20 bytes, common.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = Int2Str
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_Update
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Ymodem_PrepareIntialPacket
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Ymodem_PrepareIntialPacket
 <LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseSomePages
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_Update
 </UL>
 
 <P><STRONG><a name="[aa]"></a>Str2Int</STRONG> (Thumb, 260 bytes, Stack size 16 bytes, common.o(.text))
@@ -1056,15 +1056,15 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SerialPutChar
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_Update
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_RunApp
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_Main_Menu
-<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_Upload
+<BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_Upload
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_RunApp_debug
 <LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_DisableWriteProtectionPages
 <LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseSomePages
 <LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetIntegerInput
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetInputString
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_Update
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_RunApp
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_Main_Menu
 </UL>
 
 <P><STRONG><a name="[a6]"></a>SerialKeyPressed</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, common.o(.text))
@@ -1091,8 +1091,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetKey
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Serial_PutString
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_Main_Menu
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetIntegerInput
+<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetIntegerInput
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_Main_Menu
 </UL>
 
 <P><STRONG><a name="[a9]"></a>GetIntegerInput</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, common.o(.text), UNUSED)
@@ -1126,8 +1126,8 @@ Global Symbols
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STMFLASH_GetNextSectorStart
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STMFLASH_GetFlashSector
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_Erase
-<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Ymodem_Receive
+<BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Ymodem_Receive
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_Erase
 </UL>
 
 <P><STRONG><a name="[15e]"></a>Delay_ms</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, common.o(.text), UNUSED)
@@ -1183,12 +1183,12 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 200<LI>Call Chain = IAP_Main_Menu &rArr; IAP_WriteFlag &rArr; STMFLASH_Write &rArr; FLASH_EraseSector &rArr; FLASH_WaitForLastOperation
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_OB_GetWRP
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_WriteFlag
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
 <LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 <LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_DisableWriteProtectionPages
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetInputString
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Serial_PutString
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_WriteFlag
 </UL>
 <BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1221,10 +1221,10 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[b2]"></a>STMFLASH_ReadWord</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stmflash.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_ReadFlag
-<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STMFLASH_Read
+<BR><BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STMFLASH_Read
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STMFLASH_Write
 <LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseSomeSectors
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_ReadFlag
 </UL>
 
 <P><STRONG><a name="[b3]"></a>STMFLASH_GetFlashSector</STRONG> (Thumb, 116 bytes, Stack size 0 bytes, stmflash.o(.text))
@@ -1247,8 +1247,8 @@ Global Symbols
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STMFLASH_ReadWord
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;STMFLASH_GetFlashSector
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_WriteFlag
-<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Ymodem_Receive
+<BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Ymodem_Receive
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IAP_WriteFlag
 </UL>
 
 <P><STRONG><a name="[c1]"></a>STMFLASH_Read</STRONG> (Thumb, 32 bytes, Stack size 12 bytes, stmflash.o(.text), UNUSED)
@@ -1448,8 +1448,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
 <LI>Call Chain = __user_setup_stackheap
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_initial_stackheap
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_perproc_libspace
+<BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_perproc_libspace
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_initial_stackheap
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_sh
 </UL>

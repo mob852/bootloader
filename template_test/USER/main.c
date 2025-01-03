@@ -1,7 +1,7 @@
 #include "stm32f4xx.h"
 #include "usart.h"
 #include "delay.h"
-
+#include "HC_SR04.h"
 //ALIENTEK 探索者STM32F407开发板 实验0
 //STM32F4工程模板-库函数版本
 //技术支持：www.openedv.com
@@ -19,11 +19,19 @@ int main(void)
 	NVIC_SetVectorTable(STM32_FLASH_BASE, IAP_FLASH_SIZE);
 	uart_init(115200);
 	delay_init(84);
+	HC_SR04_Init();
+	float distance;
 	
   while(1){
-    printf("t:%d\r\n",t);
-		delay_ms(500);
-		t++;
+//    printf("t:%d\r\n",t);
+//		delay_ms(500);
+//		t++;
+		        // 测量距离
+        distance = Calculate_Distance();
+
+        // 打印距离值
+        printf("Distance: %.2f cm\n", distance);
+				delay_ms(500);
 	}
 }
 
